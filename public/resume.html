@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <title>Lauren Mizner</title>
+    </head>
+
+    <body>
+
+        <h1>Lauren Mizner</h1>
+
+        <div class="topnav">
+            <a href="#home" onclick="document.location='index.html'">Home</a>
+            <a href="#projects" onclick="document.location='projects.html'">Projects</a>
+            <a class="active" href="#resume" onclick="document.location='resume.html'">Resume</a>
+            <a href="#socials" onclick="document.location='social.html'">Social Media</a>
+        </div>
+
+        <br><br>
+
+        <text>Feel free to take a look at (and download a copy of) my resume to get a better idea of my</text>
+        <br>
+        <text>past experiences, both educational and professional.</text>
+
+        <br><br>
+
+        <a class="none" href="Lauren_Mizner_Resume.pdf" download>
+            <div class="resume-container">
+                <button class="resume-button">Download Resume</button>
+            </div>
+        </a>
+
+        <br><br>
+
+        <table class="resume-table">
+            <tr>
+                <td class="resume-data">
+                    <p class="underline">EDUCATION</p>
+                    <text class="bold">HARVARD CS50</text>
+                    <br>
+                    <text class="bold">COMPUTER SCIENCE & PROGRAMMING BOOTCAMP</text>
+                    <br>
+                    <text>Graduated March 2021 | Los Angeles, CA</text>
+                    <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <text class="bold">UNIVERSITY OF CALIFORNIA - LOS ANGELES</text>
+                    <br>
+                    <text class="bold">MASTER OF SCIENCE</text>
+                    <br>
+                    <text>Graduated June 2019 | Los Angeles, CA</text>
+                    <br>
+                    <text>Major: Structural & Earthquake Engineering</text>
+                    <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <text class="bold">UNIVERSITY OF NEBRASKA - LINCOLN</text>
+                    <br>
+                    <text class="bold">BACHELOR OF SCIENCE</text>
+                    <br>
+                    <text>Graduated  May 2017 | Lincoln, NE</text>
+                    <br>
+                    <text>Major: Civil Engineering</text>
+                    <br>
+                    <text>Honors: Dean's List 2016-2017 (Senior Year)</text>
+                    <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <p class="underline">SKILLS</p>
+                    <text class="bold">TECHNICAL SKILLS</text>
+                    <br>
+                    <text>C | Python | HTML | CSS | JavaScript | SQL | AWS | Node.js | Express.js | Flask | Microsoft VBA | MATLAB</text>
+                    <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <p class="underline">WORK EXPERIENCE</p>
+                    <text class="bold">WALTER P MOORE</text>
+                    <br>
+                    <text class="bold">GRADUATE ENGINEER - STRUCTURAL ENGINEERING</text>
+                    <br>
+                    <text>July 2019 - November 2020 | Los Angeles, CA</text>
+                    <ul>
+                        <li>Utilized Excel and Microsoft VBA to develop a VBA spreadsheet for Fortune 500 company to automate structural analysis calculations for Fp and anchorage forces per ASCE Chapter 13 requirements to be utilized on structural engineering projects nationwide</li>
+                        <li>Acted as Learning Coordiantor for the team, which consisted of communicating with vendors, scheduling seminars, recording attendance, and filing paperwork for continuing education credit</li>
+                        <li>Utilized SAP 2000 to perfom gravity and lateral analysis of steel show piece and non-typical structures for amusement parks</li>
+                        <li>Designed shear and moment connections using a combination of RAM Connections and calculations developed in Excel</li>
+                        <li>Performed gravity analysis and vibration analysis in ETABS to efficiently size composite steel beams for a multi-sotry office building</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <text class="bold">ALFRED BENESCH & COMPANY</text>
+                    <br>
+                    <text class="bold">DESIGNER I - TRAFFIC ENGINEERING</text>
+                    <br>
+                    <text>May 2017 - September 2018 | Kansas City, KS</text>
+                    <ul>
+                        <li>Analyzed various traffic scenarios using Synchro, Vistro, Vissum, and HCS</li>
+                        <li>Compiled traffic analysis results into comprehensive reports for delivery to clients</li>
+                        <li>Performed calculations for various quantities including pavement markings, conduit, and traffic signage</li>
+                        <li>Designed sidewalk plans and profiles in AutoCAD per ADA requirements</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <p class="underline">PROJECTS</p>
+                    <text class="bold">SHEAR, MOMENT, & DEFLECTIONS CALCULATOR</text>
+                    <br>
+                    <text>March 2021 | Harvard CS50</text>
+                    <ul>
+                        <li>Built a web-based application allowing users to choose from 32 structural conditions, provide basic input variables for said condition, and, in return, receive shear, moment, and deflection solutions, along with a visual aid to add additional context to the user</li>
+                        <li>Utilized HTML, CSS, JavaScript, Python, and Flask</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <text class="bold">CREDIT CARD VERIFICATION</text>
+                    <br>
+                    <text>February 2021 | Harvard CS50</text>
+                     <ul>
+                        <li>Built a python program that prompts the user for a credit card number and reports whether it is a valid American Express, MasterCard, or Visa card number per the Luhn's algorithm</li>
+                        <li>Implemented in Python using variable declaration, conditional statements, and loops</li>
+                     </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="resume-data">
+                    <text class="bold">SPELL-CHECKER</text>
+                    <br>
+                    <text>January 2021 | Harvard CS50</text>
+                    <ul>
+                        <li>Build a program in C that implements a spell checker by cross-checking words from a dictionary file with words from a suser specified text file. Words not found in the dicitonary will be returned to the user as misspelled words.</li>
+                        <li>Implemented in C using memory allocation, hash function, hash table, and linked lists</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <title>Lauren Mizner</title>
+    </head>
+
+    <body>
+        <h1>Lauren Mizner</h1>
+        <div class="topnav">
+            <a class="active" href="#home" onclick="document.location='index.html'">Home</a>
+            <a href="#projects" onclick="document.location='projects.html'">Projects</a>
+            <a href="#resume" onclick="document.location='resume.html'">Resume</a>
+            <a href="#socials" onclick="document.location='social.html'">Social Media</a>
+        </div>
+        <br><br>
+        <div class="index-container">
+            <img src="lauren1.jpg" alt="Lauren1" class="mySlides" width="450" height="450">
+            <img src="Charlie1.jpg" alt="Charlie1" class="mySlides" width="450" height="450">
+            <img src="Hero1.jpg" alt="Hero1" class="mySlides" width="450" height="450">
+            <img src="Charlie2.jpg" alt="Charlie2" class="mySlides" width="450" height="450">
+            <img src="Hero2.jpg" alt="Hero2" class="mySlides" width="450" height="450">
+
+            <button class="c-button c-black c-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="c-button c-black c-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <br><br><br>
+
+        <table class="index-table">
+            <tr>
+                <td>
+                    <text class="bold">Hi, I'm Lauren!</text> <br><br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <text>I'm a former structural engineer aspiring to break into the world of software engineering. 
+                    I have always been a problem solver and analytical thinker. I enjoy breaking down challenging problems, 
+                    producing efficient solutions, and utilizing data to assist in determining the best option for the 
+                    consumer.</text> <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <text>While working as a structural engineer, I was able to embrace working in a team environment, develop
+                    successful communication skills with both teammates and clients, efficiently manage my time on projects, and
+                    hone my analytical skills. I have a passion for learning and love that the tech industry is constantly changing
+                    and improving, providing endless opportunities to expand my knowledge and skill set.</text> <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <text>I strive to translate my experiences from designing physical spaces to designing digital spaces. 
+                    I am so excited to begin making an impact within the tech industry and am currently seeking a full-time 
+                    software engineering position.</text> <br><br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <text>P.S. Enjoy some pictures of my two fur babies: my cat, Charlie, and my dog, Hero.</text>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+    
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 5000);
+            }
+        </script>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+    </body>
+</html>

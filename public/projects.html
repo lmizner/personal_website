@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <title>Lauren Mizner</title>
+    </head>
+
+    <body>
+
+        <h1>Lauren Mizner</h1>
+
+        <div class="topnav">
+            <a href="#home" onclick="document.location='index.html'">Home</a>
+            <a class="active" href="#projects" onclick="document.location='projects.html'">Projects</a>
+            <a href="#resume" onclick="document.location='resume.html'">Resume</a>
+            <a href="#socials" onclick="document.location='social.html'">Social Media</a>
+        </div>
+
+        <br><br>
+
+        <text>Below you can find a collection of some of the projects I have worked on.</text>
+        <br>
+        <text>Click the image associated with the project to check out the program or website in more detail.</text>
+        <br><br>
+        <table class="project-table">
+            <tr class="project-row">
+                <td class="project-data">
+                    <a href="#index" onclick="document.location='index.html'">
+                        <div class="container">
+                            <img src="project4.jpg" alt="Project4" class="project-img" width="325" height="250">
+                            <div class="overlay">
+                                <div class="overlay-text bold">PERSONAL WEBSITE</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+
+                <td class="project-data">
+                    <p class="bold">PERSONAL WEBSITE</p>
+                    <p>July 2021 | Personal Project | <a class="project-link" href="https://github.com/lmizner/shear_moment_deflection_calculator">GitHub</a></p>
+                    <ul>
+                        <li>A personal website created to give an overview of my educational and professional experiences</li>
+                        <li>Features include an image carousel, image overlays, document download, tables, and unordered lists</li>
+                        <li>Utilized HTML, CSS, JavaScript, Node.js, and Express.js</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="project-row">
+                <td class="project-data">
+                    <a href="#index2" onclick="document.location='index2.html'">
+                        <div class="container">
+                            <img src="project1.jpg" alt="Project1" class="project-img" width="325" height="250">
+                            <div class="overlay">
+                                <div class="overlay-text bold">SHEAR, MOMENT, & DEFLECTION CALCULATOR</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+
+                <td class="project-data">
+                    <p class="bold">SHEAR, MOMENT, & DELFECTION CALCULATOR</p>
+                    <p>March 2021 | Harvard CS50 | <a class="project-link" href="https://github.com/lmizner/shear_moment_deflection_calculator">GitHub</a></p>
+                    <ul>
+                        <li>A web-based application allowing users to choose from 32 structural conditions, provide basic input variables 
+                        for said condition, and, in return, receive shear, moment, and deflection solutions, along with a visual aid 
+                        to add additional context to the user</li>
+                        <li>Utilized HTML, CSS, JavaScript, Python, and Flask</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="project-row">
+                <td class="project-data">
+                    <a href="#credit" onclick="document.location='credit.html'">
+                        <div class="container">
+                            <img src="project2.jpg" alt="Project2" class="project-img" width="325" height="250">
+                            <div class="overlay">
+                                <div class="overlay-text bold">CREDIT CARD VERIFICATION</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+
+                <td class="project-data">
+                    <p class="bold">CREDIT CARD VERIFICATION</p>
+                    <p>February 2021 | Harvard CS50 | <a class="project-link" href="https://github.com/lmizner/credit">GitHub</a></p>
+                    <ul>
+                        <li>A python program that prompts the user for a credit card number and reports whether it is a valid American Express,
+                            MasterCard, or Visa card number per the Luhn's algorithm</li>
+                        <li>Implemented in Python using variable declaration, conditional statements, and loops</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="project-row">
+                <td class="project-data">
+                    <a href="#spell-checker" onclick="document.location='spell-checker.html'">
+                        <div class="container">
+                            <img src="project3.jpg" alt="Project3" class="project-img" width="325" height="250">
+                            <div class="overlay">
+                                <div class="overlay-text bold">SPELL-CHECKER</div>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+
+                <td class="project-data">
+                    <p class="bold">SPELL-CHECKER</p>
+                    <p>January 2021 | Harvard CS50 | <a class="project-link" href="https://github.com/lmizner/spell-checker">GitHub</a></p>
+                    <ul>
+                        <li>A program in C that implements a spell checker by cross-checking words from a dictionary file with words from a 
+                            user specified text file</li>
+                        <li>Words not found in the dictionary will be returned to the user as misspelled words</li>
+                        <li>Implemented in C using memory allocation, hash function, hash table, and linked lists</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+    </body>
+</html>
